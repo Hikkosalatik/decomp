@@ -2236,6 +2236,7 @@ local GLOBAL_ENV = getgenv and getgenv() or _G or shared
 ]=]
 
 local function synsaveinstance(CustomOptions, CustomOptions2)
+    print("here")
 	if GLOBAL_ENV.USSI then
 		return
 	end
@@ -2261,7 +2262,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		-- decomptype = "",
 		timeout = 10,
 		-- * New:
-		__DEBUG_MODE = false,
+		__DEBUG_MODE = true,
 
 		-- Binary = false, -- true in syn newer versions (false in our case because no binary support yet), Description: Saves everything in Binary Mode (rbxl/rbxm).
 		Callback = false,
